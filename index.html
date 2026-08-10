@@ -14,12 +14,37 @@
     </head>
     <body>
         <h1>اول شي السلام عليكم </h1>
-        <button onclick="showMessage()">اضغط</button>
+       <form onsubmit="showMessage(); return false;">
+
+        <input
+            type="email"
+            id="email"
+            placeholder="الإيميل"
+            title="اكتبه الايميل بالانقليزي ياحمار"
+            required>
+
+        <br><br>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="الباسوورد"
+            pattern="[A-Za-z0-9]+"
+            title="اكتبه بالانقليزي ياحمار"
+            required>
+
+        <br><br>
+
+        <button type="submit">اضغط</button>
+
         <p id="message"></p>
-        <script>
-            function showMessage() {
-             document.getElementById("message").innerText="ياهطفف";
-            }
-        </script>
+
+    </form>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerText = " ياهطفف سرقتك";
+        }
+    </script>
     </body>
 </html>
