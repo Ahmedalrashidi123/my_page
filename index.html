@@ -13,37 +13,44 @@
         </style>
     </head>
     <body>
-        <h1>اول شي السلام عليكم </h1>
-       <form onsubmit="showMessage(); return false;">
+        <body>
 
-        <input
-            type="email"
-            id="email"
-            placeholder="الإيميل"
-            title="اكتبه الايميل بالانقليزي ياحمار"
-            required>
+<h1>اول شي السلام عليكم</h1>
 
-        <br><br>
+<form onsubmit="goToPage(); return false;">
 
-        <input
-            type="password"
-            id="password"
-            placeholder="الباسوورد"
-            pattern="[A-Za-z0-9]+"
-            title="اكتبه بالانقليزي ياحمار"
-            required>
+    <input
+        type="email"
+        id="email"
+        placeholder="الإيميل"
+        title="اكتبه الايميل بالانقليزي"
+        required>
 
-        <br><br>
+    <br><br>
 
-        <button type="button" onclick="window.location.href='page2.html'">
-            اضغط  
-          </button>
+    <input
+        type="password"
+        id="password"
+        placeholder="الباسوورد"
+        pattern="[A-Za-z0-9]+"
+        title="اكتبه بالانقليزي"
+        required>
 
-     </form>
+    <br><br>
 
-    <script>
-   function goToPage() {
-            window.location.href = "page2.html";
+    <button type="submit">
+        اضغط
+    </button>
+
+</form>
+
+<script>
+function goToPage() {
+    window.location.href = "page2.html";
+}
+</script>
+
+</body>
          }
     </script>
     </body>
